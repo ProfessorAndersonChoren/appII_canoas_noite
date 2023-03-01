@@ -9,9 +9,10 @@ void main() {
       title: "Pokedex",
       home: Home(),
       theme: ThemeData(
-        colorScheme: ColorScheme.light().copyWith(
-          primary: Color(0xFFE3350D),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFFE3350D),
         ),
+        useMaterial3: true,
       ),
     ),
   );
