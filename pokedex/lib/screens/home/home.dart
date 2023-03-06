@@ -98,6 +98,37 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Fraquezas",
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      customChip(
+                        text: "Água",
+                        backgroundColor: const Color(0xFF688FF3),
+                      ),
+                      customChip(
+                        text: "Terra",
+                        backgroundColor: const Color(0xFFF6DE3E),
+                      ),
+                      customChip(
+                        text: "Rocha",
+                        backgroundColor: const Color(0xFFA48C22),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
